@@ -1,0 +1,188 @@
+ <html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body {margin:0;}
+ .topnavbar {
+  overflow: hidden;
+  background-color: rgb(187, 36, 45);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnavbar a:hover {
+  background: #ddd;
+  color: rgb(187, 36, 45);
+}
+
+.maincontent {  
+  margin-top: 50px;  
+}
+
+
+        @font-face {
+            font-family: EnglishRegular;
+            src: url(images/notosans-regular.ttf);
+        }
+
+        @font-face {
+            font-family: EnglishBold;
+            src: url(images/notosans-black.ttf);
+        }
+
+        .eng {
+            font-family: EnglishRegular;
+        }
+
+        .engbold {
+            font-family: EnglishBold;
+        }
+
+        .cent {
+            text-align: center
+        }
+
+        .centered-div-youtube {
+            width: 560px; /* you have to have a size or this method doesn't work */
+            height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+
+            top: 0;
+            right: 0; /* confuse it i guess */
+            bottom: 0;
+            left: 0;
+            margin: auto; /* make em equal */
+        }
+
+        .centered-div-im {
+            width: 200px; /* you have to have a size or this method doesn't work */
+            height: 150px; /* think about making these max-width instead - might give you some more responsiveness */
+
+            top: 0;
+            right: 0; /* confuse it i guess */
+            bottom: 0;
+            left: 0;
+            margin: auto; /* make em equal */
+        }
+
+.collapsible {
+  background-color: #adade6;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(187, 36, 45);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+    </style>
+</head>
+  <body>
+    <div class="topnavbar">
+    <a href="https://www.saispace.in/">Home</a>
+    <a href="https://www.saispace.in/faq-en.html">FAQ</a>
+    <a href="https://home.saispace.in/home/">About us</a>
+    </div>
+
+<div class="maincontent">
+      <h3 class="engbold cent">Frequently asked questions</h3>
+
+      <button class="collapsible">1. When should I come there to see the show?</button>
+<div class="content">
+  <p>Shows begin when the number of visitors crosses 120, which may happen around 9.30 or 9.45 am. <b>Entry is up to 10.30 am only.</b> You can come here by 10:00 or 10:15. All those who come before 10.30 can see the show, but may have to wait for those who have come before them to finish.
+</p>
+</div>
+<button class="collapsible">2. Are you open on Sundays and holidays?</button>
+<div class="content">
+  <p>Yes. We do not have regular shows only on 3 days of the year - 23 November, 24 April and 11 January.
+</p>
+</div>
+<button class="collapsible">3. How much time would it take to see the show?</button>
+<div class="content">
+  <p>You can budget an hour or 90 minutes for your visit, including waiting, entry time, exit time, viewing the exhibits, and so on. Duration of the show is approximately half an hour.
+</p>
+</div>
+<button class="collapsible">4. 10:30 am is not convenient for us. Can we have a show at some other time?</button>
+<div class="content">
+  <p>Educational institutions and other groups with more than 120 members can arrange for special shows by contacting us at least 48 hours in advance. We are not permitted to arrange special screenings for smaller groups.
+</p>
+</div>
+<button class="collapsible">5. Why can&apos;t I have a special show today? Why should I inform you two days in advance?</button>
+<div class="content">
+  <p>We need to ensure that two groups don’t ask for the same time slot on the same day. Also, we have many duties other than the screening of shows, and we need to set aside time for special screenings. If you do not let us know in advance, we may have other commitments which would prevent us from helping you.
+</p>
+</div>
+<button class="collapsible">6. We want to see a show in Tamil (or Kannada or Malayalam or Russian or Spanish). But you are offering only English, Hindi and Telugu though we have seen a show earlier with Tamil (or Kannada or Malayalam or Russian or Spanish) in the past. Why?
+</button>
+<div class="content">
+  <p>We have a large number of shows. In the past, we had a system of headphones, and for certain shows, we had additional languages available. Currently, for regular shows, we are limited to English, Hindi and Telugu. If your group has more than 120 members, we can arrange for special shows if you contact us at least 48 hours in advance.
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+      
+      <h3 class="eng cent">Important Links:</h3>
+      <p class="eng cent">
+          <a href="https://www.srisathyasai.org/" target="_blank" class="footer-link">Sri Sathya Sai Central Trust</a> | 
+          <a href="https://www.sssmediacentre.org/" target="_blank" class="footer-link">Sri Sathya Sai Media Centre</a> | 
+    <a href="https://www.sssihl.edu.in/" target="_blank" class="footer-link">Sri Sathya Sai Institute of Higher Learning</a> | 
+    <a href="https://www.ssshss.edu.in/" target="_blank" class="footer-link">Sri Sathya Sai Higher Secondary School</a> | 
+    <a href="https://www.ssssoindia.org/" target="_blank" class="footer-link">Sri Sathya Sai Seva Organization</a> | 
+    <a href="https://www.srisathyasaiglobalcouncil.org/" target="_blank" class="footer-link">Sri Sathya Sai Global Council</a> | 
+    <a href="https://ssschv.srisathyasai.org/" target="_blank" class="footer-link">Sri Sathya Sai Centre for Human Values</a> |
+    <a href="https://www.srisathyasaividyavahini.org/" target="_blank" class="footer-link">Sri Sathya Sai Vidya Vahini</a> </p>
+</div>  
+</body></html>
