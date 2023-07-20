@@ -1,9 +1,36 @@
-﻿<html>
+<html>
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
+body {margin:0;}
+ .topnavbar {
+  overflow: hidden;
+  background-color: rgb(187, 36, 45);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnavbar a:hover {
+  background: #ddd;
+  color: rgb(187, 36, 45);
+}
+
+.maincontent {  
+  margin-top: 50px;  
+}
 
         @font-face {
             font-family: EnglishRegular;
@@ -51,6 +78,13 @@
     </style>
 </head>
   <body>
+    <div class="topnavbar">
+    <a href="https://www.saispace.in/">Home</a>
+    <a href="https://www.saispace.in/faq-en.html">FAQ</a>
+    <a href="https://home.saispace.in/home/">About us</a>
+    </div>
+
+<div class="maincontent">
       <div class="centered-div-im">
           <img src="https://home.saispace.in/images/Planetarium.jpg" width="200" height="150" alt="Planetarium" />
       </div>
@@ -84,5 +118,5 @@
     <a href="https://www.srisathyasaiglobalcouncil.org/" target="_blank" class="footer-link">Sri Sathya Sai Global Council</a> | 
     <a href="https://ssschv.srisathyasai.org/" target="_blank" class="footer-link">Sri Sathya Sai Centre for Human Values</a> |
     <a href="https://www.srisathyasaividyavahini.org/" target="_blank" class="footer-link">Sri Sathya Sai Vidya Vahini</a> </p>
-      
+</div>    
   </body></html>
