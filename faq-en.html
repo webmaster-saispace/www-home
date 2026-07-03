@@ -101,6 +101,7 @@
 
          .content {
              padding: 0 18px;
+             max-height: 0;
              overflow: hidden;
              transition: max-height 0.2s ease-out;
              background-color: #f1f1f1;
@@ -171,5 +172,25 @@
     <a href="https://www.srisathyasaiglobalcouncil.org/" target="_blank" class="footer-link">Sri Sathya Sai Global Council</a> | 
     <a href="https://ssschv.srisathyasai.org/" target="_blank" class="footer-link">Sri Sathya Sai Centre for Human Values</a> |
     <a href="https://www.srisathyasaividyavahini.org/" target="_blank" class="footer-link">Sri Sathya Sai Vidya Vahini</a> </p>
-</div>  
+</div> 
+   <script>
+document.querySelectorAll('.collapsible').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var content = this.nextElementSibling;
+    var isOpen = content.style.maxHeight;
+
+    // Close every open answer first
+    document.querySelectorAll('.content').forEach(function(c) {
+      c.style.maxHeight = null;
+      c.style.padding = "0 18px";
+    });
+
+    // If the clicked one wasn't already open, open it
+    if (!isOpen) {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.padding = "18px";
+    }
+  });
+});
+</script>
 </body></html>
